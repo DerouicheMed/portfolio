@@ -1,0 +1,41 @@
+section {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-image: url("/assets/img/background.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+/* for pc screens*/
+@media (min-width: 1025px) {
+  .display-message {
+    position: absolute;
+    top: 40%;
+    left: 15%;
+    max-width: 36.5vw;
+  }
+  .display-message h1 {
+    font-size: 2.5vw;
+  }
+
+  .display-message p {
+    font-size: 0.833vw;
+  }
+}
+@media (max-width: 1024px) {
+  .display-message {
+    position: absolute;
+    top: 30%;
+    left: 10%;
+    width: 80%;
+    text-align: center;
+  }
+  .display-message h1 {
+    font-size: 5vw;
+  }
+
+  .display-message p {
+    font-size: 1.5vh;
+  }
+}

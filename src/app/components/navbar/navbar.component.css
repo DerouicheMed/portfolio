@@ -1,0 +1,131 @@
+nav {
+  z-index: 10;
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+  height: 10.5vw;
+  background-color: rgb(23, 66, 171, 0.09);
+  overflow: hidden;
+  padding: 0px;
+}
+.navbar-nav {
+  flex-direction: row;
+  width: 100%;
+  height: 100%;
+}
+.link-text {
+  display: none;
+}
+.nav-item {
+  position: relative;
+  height: 100%;
+  width: 20%;
+}
+.nav-item img {
+  width: 5vw;
+}
+.nav-link {
+  text-align: center;
+  height: 100%;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.indicator {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  height: 10%;
+  width: 100%;
+  background-image: linear-gradient(#fe0072, #ff0046);
+}
+.hoverme-arrow {
+  display: none;
+}
+@media (min-width: 576px) {
+  nav {
+    height: 10.5vw;
+  }
+  .nav-item img {
+    width: 6vw;
+  }
+}
+
+@media (min-width: 1025px) {
+  nav {
+    top: 0;
+    left: 0px;
+    width: 5vw;
+    height: 100vh;
+    background-color: rgb(0, 0, 0, 0.09);
+    overflow: hidden;
+    padding: 0px;
+    transition: width 200ms ease-out;
+  }
+  nav:hover {
+    width: 13vw !important;
+  }
+  nav:hover ~ .hoverme-arrow {
+    left: 13.2vw !important;
+  }
+  .navbar-nav {
+    flex-direction: column;
+    height: min-content;
+    margin: auto;
+  }
+  .nav-item {
+    position: relative;
+    width: 13.2vw;
+    height: 2.6vw;
+    margin: 1.8vw 0;
+    color: white;
+    font-size: 1vw;
+  }
+  .nav-item img {
+    margin: 0 1.5vw;
+    width: 2vw;
+  }
+  .nav-link {
+    position: relative;
+    color: white !important;
+    padding: 0px;
+    height: 100%;
+    padding: 0px !important;
+    text-align: left;
+  }
+  .nav-link::after {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 0%;
+    height: 100%;
+    z-index: -1;
+    background-image: linear-gradient(#fe0072, #ff0046);
+    border-radius: 0px 25px 25px 0px;
+    transition: width 300ms ease-out;
+  }
+  .nav-link:hover::after {
+    width: 120%;
+  }
+  .link-text {
+    display: contents;
+  }
+  .indicator {
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 0.26vw;
+  }
+  .hoverme-arrow {
+    position: absolute;
+    top: 10%;
+    left: 5.2vw;
+    z-index: 20;
+    display: block;
+    transition: left 200ms ease-out;
+  }
+  .hoverme-arrow img {
+    width: 6.25vw;
+  }
+}
