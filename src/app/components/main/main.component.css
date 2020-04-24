@@ -7,21 +7,22 @@ section {
   background-position: center;
   background-repeat: no-repeat;
 }
-/* for pc screens*/
-@media (min-width: 1025px) {
-  .display-message {
-    position: absolute;
-    top: 40%;
-    left: 15%;
-    max-width: 36.5vw;
-  }
-  .display-message h1 {
-    font-size: 2.5vw;
-  }
+.display-message {
+  position: absolute;
+  top: 40%;
+  left: 15%;
+  max-width: 36.5vw;
+}
+.display-message h1 {
+  font-family: "Playfair Display", serif;
+  font-size: 2.4vw;
+  font-weight: 700;
+}
 
-  .display-message p {
-    font-size: 0.833vw;
-  }
+.display-message p {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.1vw;
+  font-weight: 300;
 }
 @media (max-width: 1024px) {
   .display-message {
@@ -29,6 +30,7 @@ section {
     top: 30%;
     left: 10%;
     width: 80%;
+    max-width: none;
     text-align: center;
   }
   .display-message h1 {

@@ -4,7 +4,7 @@ nav {
   bottom: 0px;
   left: 0px;
   width: 100%;
-  height: 10.5vw;
+  height: 10vw;
   background-color: rgb(23, 66, 171, 0.09);
   overflow: hidden;
   padding: 0px;
@@ -23,13 +23,14 @@ nav {
   width: 20%;
 }
 .nav-item img {
-  width: 5vw;
+  width: 6vw;
+  margin: 2.25vw 0;
 }
 .nav-link {
   text-align: center;
   height: 100%;
   margin-top: auto;
-  margin-bottom: auto;
+  padding: 0px;
 }
 .indicator {
   position: absolute;
@@ -48,6 +49,7 @@ nav {
   }
   .nav-item img {
     width: 6vw;
+    margin: 2.25vw 0;
   }
 }
 
@@ -76,13 +78,13 @@ nav {
   .nav-item {
     position: relative;
     width: 13.2vw;
-    height: 2.6vw;
-    margin: 1.8vw 0;
+    height: 3vw;
+    margin: 1.2vw 0;
     color: white;
     font-size: 1vw;
   }
   .nav-item img {
-    margin: 0 1.5vw;
+    margin: 0.5vw 1.5vw;
     width: 2vw;
   }
   .nav-link {
@@ -103,7 +105,7 @@ nav {
     z-index: -1;
     background-image: linear-gradient(#fe0072, #ff0046);
     border-radius: 0px 25px 25px 0px;
-    transition: width 300ms ease-out;
+    transition: width 350ms ease-out;
   }
   .nav-link:hover::after {
     width: 120%;
