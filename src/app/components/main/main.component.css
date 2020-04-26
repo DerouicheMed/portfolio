@@ -9,9 +9,11 @@ section {
 }
 .display-message {
   position: absolute;
-  top: 40%;
+  top: 50%;
   left: 15%;
   max-width: 36.5vw;
+  transform: translateY(-50%);
+  z-index: 2;
 }
 .display-message h1 {
   font-family: "Playfair Display", serif;
@@ -24,14 +26,26 @@ section {
   font-size: 1.1vw;
   font-weight: 300;
 }
+.btn-more {
+  background-image: linear-gradient(#fe0072, #ff0046);
+  color: white;
+  border-radius: 25px;
+  padding: 0.5vw 3vw;
+  font-size: 1vw;
+  font-weight: 400;
+}
+@media (min-width: 1025px) {
+  .btn-more:hover {
+    background-image: linear-gradient(#189ed8, #116ce8);
+  }
+}
 @media (max-width: 1024px) {
   .display-message {
-    position: absolute;
-    top: 30%;
     left: 10%;
     width: 80%;
     max-width: none;
     text-align: center;
+    transform: translateY(-70%);
   }
   .display-message h1 {
     font-size: 5vw;
@@ -39,5 +53,24 @@ section {
 
   .display-message p {
     font-size: 1.5vh;
+  }
+  .btn-more {
+    padding: 1vw 8vw;
+    font-size: 20px;
+    font-weight: 700;
+  }
+}
+@media (max-width: 576px) {
+  .display-message h1 {
+    font-size: 7vw;
+  }
+
+  .display-message p {
+    font-size: 2vh;
+  }
+  .btn-more {
+    padding: 1vw 8vw;
+    font-size: 20px;
+    font-weight: 700;
   }
 }
