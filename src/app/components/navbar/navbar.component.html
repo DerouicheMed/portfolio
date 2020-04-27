@@ -1,33 +1,41 @@
 <nav class="navbar navbar-expand-lg navbar-light">
   <ul class="navbar-nav">
     <li class="nav-item">
-      <a class="nav-link" href="#">
-        <span class="indicator"></span>
-        <img src="assets/img/mansion.svg" alt="" />
+      <a class="nav-link" [routerLink]="['/']" (click)="navigateTo('home')">
+        <span *ngIf="indicator === '10000'" class="indicator"></span>
+        <img src="assets/img/mansion.svg" alt="home" />
         <span class="link-text">HOME</span>
       </a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" href="#">
-        <img src="assets/img/body-scan.svg" alt="" />
+      <a
+        class="nav-link"
+        [routerLink]="['/services']"
+        (click)="navigateTo('services')"
+      >
+        <span *ngIf="indicator === '01000'" class="indicator"></span>
+        <img src="assets/img/body-scan.svg" alt="services" />
         <span class="link-text">SERVICES</span>
       </a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" href="#">
-        <img src="assets/img/info.svg" alt="" />
+      <a class="nav-link" href="#" (click)="navigateTo('about')">
+        <span *ngIf="indicator === '00100'" class="indicator"></span>
+        <img src="assets/img/info.svg" alt="about" />
         <span class="link-text">ABOUT</span>
       </a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" href="#">
-        <img src="assets/img/mail.svg" alt="" />
+      <a class="nav-link" href="#" (click)="navigateTo('contact')">
+        <span *ngIf="indicator === '00010'" class="indicator"></span>
+        <img src="assets/img/mail.svg" alt="contact" />
         <span class="link-text">CONTACT</span>
       </a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" href="#">
-        <img src="assets/img/socials.svg" alt="" />
+      <a class="nav-link" href="#" (click)="navigateTo('socials')">
+        <span *ngIf="indicator === '00001'" class="indicator"></span>
+        <img src="assets/img/socials.svg" alt="socials" />
         <span class="link-text">SOCIALS</span>
       </a>
     </li>
