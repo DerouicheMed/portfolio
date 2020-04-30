@@ -7,13 +7,11 @@
   background: transparent;
   transform: rotateZ(135deg);
 }
-
 @media (max-width: 1024px) {
   .sky-container {
     display: none;
   }
 }
-
 .star {
   position: absolute;
   top: 50%;
@@ -24,7 +22,6 @@
   animation: tail 3000ms ease-in-out infinite,
     shooting 3000ms ease-in-out infinite;
 }
-
 .star::before,
 .star::after {
   position: absolute;
