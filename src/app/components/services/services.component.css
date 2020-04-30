@@ -1,3 +1,51 @@
-#services {
-  margin-top: -200px;
+section {
+  background-image: url("/assets/img/services_bg.jpg");
+}
+.row,
+.col-md-6 {
+  margin: 0px;
+  padding: 0px;
+}
+.display-message {
+  margin-left: 13vw;
+  margin-top: 20%;
+}
+.display-message h1 {
+  font-family: "Playfair Display", serif;
+  font-size: 2.4vw;
+  font-weight: 700;
+}
+.highlighted {
+  font-family: "Kaushan Script", cursive;
+  font-weight: 400;
+  color: transparent;
+  background-image: linear-gradient(#fff, #ff0046);
+  background-clip: text;
+  font-size: 3vw;
+}
+.service-list {
+  overflow: hidden;
+}
+
+/**Starship animation**/
+.starship {
+  position: absolute;
+  top: 40vh;
+  left: 36vw;
+  width: 7.8vw;
+  animation-name: starhip_wobble;
+  animation-duration: 10000ms;
+  animation-iteration-count: infinite;
+}
+.starship img {
+  width: 100%;
+}
+
+@keyframes starhip_wobble {
+  25% {
+    transform: rotateZ(-10deg) translate(40%);
+  }
+  75% {
+    transform: rotateZ(40deg) translate(-10%);
+  }
 }

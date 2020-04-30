@@ -1,10 +1,13 @@
-<div class="box">
-  <div class="banner">
-    <img class="img-fluid" src="assets/img/service1.png" alt="" />
-  </div>
-  <div class="description">
-    <h5>Simple & beautiful websites</h5>
+<div
+  class="box"
+  [class]="service.id"
+  (mouseover)="onMouseEnter(service.id)"
+  (mouseout)="onMouseOut(service.id)"
+>
+  <div class="inside">
     <hr />
-    <p>You decide how you want your webisite to be built</p>
+    <h3>{{ service.heading }}</h3>
+    <p>{{ service.paragraph }}</p>
+    <a class="btn btn-contact" [routerLink]="['/services']">Contact Me</a>
   </div>
 </div>

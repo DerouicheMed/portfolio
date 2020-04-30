@@ -1,20 +1,138 @@
 .box {
   position: relative;
-  height: 300px;
-  width: 500px;
   background-color: transparent;
+  border-radius: 25px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0) !important;
+  margin: 50% 1vw;
+  cursor: pointer;
+  overflow: hidden;
+  transition: width 300ms ease, height 300ms ease, margin 300ms ease;
 }
-.description {
+.inside {
   position: absolute;
-  top: 0px;
-  right: 0px;
-  height: 300px;
-  max-width: 200px;
-  padding: 15px;
-  background-image: linear-gradient(to bottom right, #121026, #5d2988);
+  bottom: -30%;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 25px;
+  padding: 6%;
+  color: black;
+  overflow: hidden;
+  transition: bottom 300ms ease;
 }
-.banner {
+.inside:hover {
+  bottom: 0px;
+}
+hr {
+  background-image: linear-gradient(#fe0072, #ff0046);
+  border-radius: 25px;
+  margin-top: 2%;
+  margin-top: 2%;
+  transition: width 300ms ease, height 200ms ease, margin 300ms ease;
+}
+h3 {
+  font-weight: 700;
+  transition: all 300ms ease;
+}
+p {
+  font-weight: 300;
+  transition: all 300ms ease;
+}
+.btn-contact {
   position: absolute;
-  top: 25px;
-  left: 0px;
+  bottom: 10%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  color: white;
+  border-radius: 25px;
+  padding: 0.5vw 1.5vw;
+  font-size: 1vw;
+  font-weight: 400;
+  background-image: linear-gradient(#fe0072, #ff0046);
+}
+.service-1 {
+  height: 31.25vw;
+  width: 18.75vw;
+  background-image: url("/assets/img/service_box_bg_1.jpg");
+}
+.service-2 {
+  height: 26vw;
+  width: 15.625vw;
+  background-image: url("/assets/img/service_box_bg_2.jpg");
+}
+.service-3 {
+  height: 20.83vw;
+  width: 12.5vw;
+  background-image: url("/assets/img/service_box_bg_3.jpg");
+}
+.service-1 hr {
+  width: 2.6vw;
+  height: 0.52vw;
+}
+.service-2 hr {
+  width: 2.16vw;
+  height: 0.43vw;
+}
+.service-3 hr {
+  width: 1.73vw;
+  height: 0.29vw;
+}
+.service-1 h3 {
+  font-size: 2vw;
+}
+.service-2 h3 {
+  font-size: 1.66vw;
+}
+.service-3 h3 {
+  font-size: 1.33vw;
+}
+.service-1 p {
+  font-size: 1vw;
+}
+.service-2 p {
+  font-size: 0.83vw;
+}
+.service-3 p {
+  font-size: 0.67vw;
+}
+/***************************************
+**Gets applied on hover service box hover
+****************************************/
+.minimize-service-box {
+  height: 400px !important;
+  width: 240px !important;
+  margin-left: 0.5vw;
+  margin-right: 0.5vw;
+}
+.minimize-service-box hr {
+  width: 1.73vw;
+  height: 0.29vw;
+  margin-top: 0.25vw;
+  margin-top: 0.25vw;
+}
+.minimize-service-box h3 {
+  font-size: 1.33vw;
+}
+.minimize-service-box p {
+  font-size: 0.67vw;
+}
+
+.maximize-service-box {
+  height: 33.85vw;
+  width: 20.31vw;
+  margin-left: 1.5vw;
+  margin-right: 1.5vw;
+}
+.maximize-service-box hr {
+  width: 2.82vw;
+  height: 0.56vw;
+}
+.maximize-service-box h3 {
+  font-size: 2.17vw;
+}
+.maximize-service-box p {
+  font-size: 1.1vw;
 }
