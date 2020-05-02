@@ -15,7 +15,7 @@ h4 {
   font-family: "Libre Barcode 128 Text", cursive;
   letter-spacing: 0.15625vw;
 }
-@media (max-width: 1024px) {
+@media (max-width: 992px) {
   .footer {
     display: none;
   }

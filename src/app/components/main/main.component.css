@@ -28,7 +28,10 @@ section {
   font-size: 1vw;
   font-weight: 400;
 }
-@media (min-width: 1025px) {
+@media (min-width: 992px) {
+  .btn-more {
+    border-radius: 1.3vw;
+  }
   .btn-more::before,
   .btn-more::after {
     content: "";
@@ -53,7 +56,7 @@ section {
     opacity: 1;
   }
 }
-@media (max-width: 1024px) {
+@media (max-width: 991px) {
   .display-message {
     left: 10%;
     width: 80%;
@@ -71,6 +74,7 @@ section {
   .btn-more {
     margin-top: 1vw;
     padding: 1.5vw 8vw;
+    border-radius: 5vw;
     font-size: 20px;
     font-weight: 700;
     background-image: linear-gradient(#fe0072, #ff0046);

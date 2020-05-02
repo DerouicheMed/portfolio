@@ -25,8 +25,31 @@ export class ServicesComponent implements OnInit {
       We'll make sure your website is SEO-friendly and well indexed by google  `,
     id: 'service-3',
   };
+  toggleSlideButton = 'slide-left';
 
   constructor() {}
 
   ngOnInit(): void {}
+
+  slideLeft = () => {
+    if (this.toggleSlideButton === 'slide-left') {
+      var element1 = $('.service-3');
+      var element2 = $('.service-1');
+      element1.addClass('service-1').removeClass('service-3');
+      element2.addClass('service-3').removeClass('service-1');
+      $('.service-list').addClass('slide-service-list');
+      this.toggleSlideButton = 'slide-right';
+    }
+  };
+
+  slideRight = () => {
+    if (this.toggleSlideButton === 'slide-right') {
+      var element1 = $('.service-3');
+      var element2 = $('.service-1');
+      element1.addClass('service-1').removeClass('service-3');
+      element2.addClass('service-3').removeClass('service-1');
+      $('.service-list').removeClass('slide-service-list');
+      this.toggleSlideButton = 'slide-left';
+    }
+  };
 }

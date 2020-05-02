@@ -1,76 +1,122 @@
-section {
-  background-image: url("/assets/img/services_bg.jpg");
-}
 .row,
-.col-md-6 {
+.col-lg-6,
+.col-12 {
   margin: 0px;
   padding: 0px;
 }
-.display-message {
-  margin-left: 13vw;
-  margin-top: 20%;
+section {
+  background-image: url("/assets/img/services_bg.jpg");
 }
-.display-message h1 {
-  font-family: "Playfair Display", serif;
-  font-size: 2.4vw;
-  font-weight: 700;
-}
-.highlighted {
-  font-family: "Kaushan Script", cursive;
-  font-weight: 400;
-  color: transparent;
-  background-image: linear-gradient(#fff, #ff0046);
-  background-clip: text;
-  font-size: 3vw;
-}
-.service-list {
-  position: absolute;
-  height: 37vw;
-  top: 50vh;
-  left: 0px;
-  transform: translate(0, -50%);
-  overflow: hidden;
-}
-/** arrow buttons **/
-.arrows {
-  position: absolute;
-  top: 85vh;
-}
-.btn-arrow {
-  position: relative;
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  background-color: rgba(0, 0, 0, 0.5);
-}
-.btn-arrow i {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: white;
-  opacity: 0.6;
-}
-
-/**Starship animation**/
-.starship {
-  position: absolute;
-  top: 40vh;
-  left: 36vw;
-  width: 7.8vw;
-  animation-name: starhip_wobble;
-  animation-duration: 10000ms;
-  animation-iteration-count: infinite;
-}
-.starship img {
-  width: 100%;
-}
-
-@keyframes starhip_wobble {
-  25% {
-    transform: rotateZ(-10deg) translate(40%);
+/***************************
+*********Phone screen*******
+****************************/
+@media (max-width: 576px) {
+  .display-message h1 {
+    font-size: 7vw !important;
   }
-  75% {
-    transform: rotateZ(40deg) translate(-10%);
+  .display-message h3 {
+    font-size: 4vw !important;
+  }
+}
+/***************************
+*********Tablet screen*******
+****************************/
+@media (max-width: 991px) {
+  .starship,
+  .arrows {
+    display: none;
+  }
+  .display-message {
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 2vh 5vw;
+    border-radius: 25px;
+    margin: 2vh 2vh 5vh 2vh;
+    color: black;
+  }
+  .display-message h1 {
+    font-size: 4vw;
+    font-weight: 700;
+  }
+  .display-message h3 {
+    font-size: 2vw;
+    font-weight: 400;
+  }
+  .service-list {
+    height: 70vh;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    -webkit-overflow-scrolling: touch;
+  }
+  .service-list::-webkit-scrollbar {
+    display: none;
+  }
+}
+/***************************
+********** Big screen*******
+****************************/
+@media (min-width: 992px) {
+  .row,
+  .col-lg-6 {
+    height: 100vh;
+  }
+  .service-list {
+    position: absolute;
+    height: 37vw;
+    top: 50vh;
+    left: 0px;
+    transform: translate(10%, -50%);
+    overflow: hidden;
+    transition: left 300ms ease;
+    z-index: 2;
+  }
+  .slide-service-list {
+    left: -18.75vw;
+  }
+  /** arrow buttons **/
+  .arrows {
+    position: absolute;
+    top: 86vh;
+    left: 2vw;
+    z-index: 3;
+  }
+  .btn-arrow {
+    position: relative;
+    width: 2.6vw;
+    height: 2.6vw;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.3);
+    margin: 0.05vw;
+  }
+  .btn-arrow i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 0.83vw;
+    transform: translate(-50%, -50%);
+    color: white;
+    opacity: 0.6;
+  }
+  /**Starship animation**/
+  .starship {
+    position: absolute;
+    top: 40vh;
+    left: 36vw;
+    width: 7.8vw;
+    animation-name: starhip_wobble;
+    animation-duration: 10000ms;
+    animation-iteration-count: infinite;
+  }
+  .starship img {
+    width: 100%;
+  }
+
+  @keyframes starhip_wobble {
+    25% {
+      transform: rotateZ(-10deg) translate(40%);
+    }
+    75% {
+      transform: rotateZ(40deg) translate(-10%);
+    }
   }
 }
