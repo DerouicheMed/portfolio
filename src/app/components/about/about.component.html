@@ -1,0 +1,57 @@
+<section id="about">
+  <div class="row">
+    <div class="col-lg-6 profile-col">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="profile-pic">
+              <img
+                class="img-fluid"
+                src="assets/img/profile_pic.jpg"
+                alt="Derouiche Mohamed"
+              />
+            </div>
+            <div class="profile-name">
+              <h1>Derouiche <span>Mohamed</span></h1>
+              <h2>Full stack web developer / web designer</h2>
+            </div>
+            <div class="profile-paragraph">
+              <p>
+                Hi my name is Mohamed but you already knew that. I'm currently
+                still a student trying to navigate my way through this maze that
+                is web development. I started developing at an early age just
+                because it was fun. I liked how you can control the elements in
+                the web page and make them behave in different ways. I wasn't
+                planned at persuing this as a profession, it was a mere hobby.
+                But life turns around and here we are ready to rock n roll.
+              </p>
+            </div>
+            <div class="profile-buttons">
+              <button class="btn" (click)="navigateTo()">
+                Hire Me
+              </button>
+              <a
+                class="btn"
+                href="assets/img/about_bg.png"
+                download="Derouiche_Mohamed_CV.png"
+                >Download Resume</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-6 projects-col">
+      <div class="projects">
+        <div class="row">
+          <div class="col-12">
+            <h1>Projects I worked on :</h1>
+          </div>
+        </div>
+        <div *ngFor="let project of projects">
+          <app-project [project]="project"></app-project>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

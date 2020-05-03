@@ -1,0 +1,54 @@
+#about {
+  color: #000f16;
+}
+.profile-col {
+  background-image: url("/assets/img/about_bg.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: repeat;
+  height: 100vh;
+  text-align: center;
+}
+.container {
+  position: relative;
+  top: 50%;
+  transform: translate(0, -50%);
+  background-color: rgba(255, 255, 255, 0.8);
+  max-width: 80%;
+  padding: 20px;
+}
+.profile-pic {
+  width: 150px;
+  border: 5px solid #fef6c7;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: auto;
+}
+.profile-name {
+  margin: 10px auto;
+}
+.profile-name h1 {
+  font-size: 40px;
+  font-weight: 700;
+}
+.profile-name h2 {
+  font-size: 22px;
+  font-weight: 400;
+}
+.profile-name span {
+  color: #ff4e01;
+}
+.profile-paragraph {
+  margin: 40px auto;
+  text-align: justify;
+}
+.projects {
+  height: 90%;
+  margin: 5%;
+  padding: 50px;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0) !important;
+}
+.projects h1 {
+  font-size: 32px;
+  font-weight: 700;
+}
