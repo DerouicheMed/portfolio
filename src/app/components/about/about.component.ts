@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class AboutComponent implements OnInit {
   projects = [
     {
-      title: 'Voice of customer System',
+      title: 'Voice of Customer System',
       link: 'link',
       description: `Technologies : React js, Node js, Express js, MongoDB`,
     },
@@ -18,17 +18,17 @@ export class AboutComponent implements OnInit {
       description: `Technologies : Angular 7, Java/JEE, Hibernate, JPA, MySql`,
     },
     {
-      title: 'Q&A internal forum',
+      title: 'Q&A Internal Forum',
       link: 'link',
       description: `Technologies: Angular 7, Spring boot 2.x, Spring Security, Hibernate, JPA, PostegreSQL, Liquibase`,
     },
     {
-      title: 'Freelancing platform',
+      title: 'Freelancing Platform',
       link: 'link',
       description: `Technologies: Java/JavaFX, Symfony 3.4, Codename One mobile library, MySQL DB`,
     },
     {
-      title: 'Monographs and press reviews management system',
+      title: 'Monographs and Press reviews Management System',
       link: 'link',
       description: `Technologies: Spring MVC, Hibernate, JPA, Bootstrap, JavaScript/JQuery Oracle DB`,
     },

@@ -1,0 +1,88 @@
+#contact {
+  overflow: hidden;
+  background-image: url("/assets/img/contact_bg.jpg");
+}
+.contact-box {
+  background-color: rgba(255, 255, 255);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0) !important;
+  color: black;
+}
+
+.contact-box h1 {
+  font-weight: 700;
+}
+.contact-box h2 {
+  font-weight: 400;
+}
+form {
+  text-align: left;
+}
+form input {
+  border-radius: 25px;
+}
+button {
+  width: 100%;
+}
+/*******************************
+********** tablet Screen **********
+*******************************/
+@media (max-width: 991px) {
+  .contact-box {
+    padding: 20px 15px;
+    text-align: center;
+    margin: 15px;
+    border-radius: 25px;
+  }
+  h1 {
+    font-size: 32px;
+  }
+  h2 {
+    font-size: 24px;
+  }
+  textarea,
+  button {
+    border-radius: 25px;
+  }
+}
+/*******************************
+********** PC Screen **********
+*******************************/
+@media (min-width: 992px) {
+  #contact,
+  .row,
+  .col-12 {
+    height: 100vh;
+  }
+  .contact-box {
+    width: 40vw;
+    height: 40vw;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 2vw 5vw;
+    text-align: center;
+    border-radius: 1.3vw;
+  }
+  h1,
+  h2 {
+    margin-bottom: 0.41vw;
+  }
+  h1 {
+    font-size: 2.5vw;
+  }
+  h2 {
+    font-size: 1.1vw;
+  }
+
+  .form-group {
+    margin-bottom: 0.83vw;
+  }
+  input,
+  textarea,
+  button {
+    font-size: 1vw;
+    border-radius: 1.3vw;
+    padding: 0.625vw;
+  }
+}

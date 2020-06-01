@@ -1,14 +1,47 @@
-.project {
-  border-bottom: 1px solid black;
-  margin-bottom: 10px;
+/************************
+***** Mobile Screen *****
+************************/
+@media (max-width: 576px) {
+  .project-title {
+    font-size: 14px;
+  }
+  .project-link {
+    font-size: 12px;
+    color: #ff4e01;
+  }
+  .project-description {
+    font-size: 11px;
+  }
 }
-.project-title {
-  font-size: 16px;
+@media (max-width: 991px) {
+  .project {
+    border-bottom: 1px solid black;
+    margin-bottom: 10px;
+  }
+  .project-title {
+    font-size: 16px;
+  }
+  .project-link {
+    font-size: 14px;
+    color: #ff4e01;
+  }
+  .project-description {
+    font-size: 11px;
+  }
 }
-.project-link {
-  font-size: 14px;
-  color: #ff4e01;
-}
-.project-description {
-  font-size: 11px;
+@media (min-width: 992px) {
+  .project {
+    border-bottom: 0.052vw solid black;
+    margin-bottom: 0.52vw;
+  }
+  .project-title {
+    font-size: 0.833vw;
+  }
+  .project-link {
+    font-size: 0.729vw;
+    color: #ff4e01;
+  }
+  .project-description {
+    font-size: 0.573vw;
+  }
 }

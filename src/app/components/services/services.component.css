@@ -1,11 +1,12 @@
+#services {
+  background-image: url("/assets/img/services_bg.jpg");
+  overflow: hidden;
+}
 .row,
 .col-lg-6,
 .col-12 {
   margin: 0px;
   padding: 0px;
-}
-section {
-  background-image: url("/assets/img/services_bg.jpg");
 }
 /***************************
 *********Phone screen*******
@@ -60,6 +61,22 @@ section {
   .col-lg-6 {
     height: 100vh;
   }
+  .display-message {
+    position: relative;
+    top: 50%;
+    height: 31.25vw;
+    width: 70%;
+    margin-left: 30%;
+    padding: 2vw;
+    border-radius: 2.5vw;
+    background-color: rgba(255, 255, 255, 09);
+    transform: translate(0, -50%);
+    z-index: 5;
+    background-image: url("/assets/img/services_bg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
   .service-list {
     position: absolute;
     height: 37vw;
@@ -71,7 +88,7 @@ section {
     z-index: 2;
   }
   .slide-service-list {
-    left: -18.75vw;
+    left: -19vw;
   }
   /** arrow buttons **/
   .arrows {

@@ -103,7 +103,7 @@ p {
 @media (min-width: 992px) {
   .box,
   .inside {
-    border-radius: 2.5vw;
+    border-radius: 2vw;
   }
   .box {
     top: 50%;

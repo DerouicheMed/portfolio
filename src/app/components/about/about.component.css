@@ -1,39 +1,23 @@
 #about {
   color: #000f16;
+  overflow-x: hidden;
 }
 .profile-col {
   background-image: url("/assets/img/about_bg.png");
   background-size: cover;
   background-position: center;
   background-repeat: repeat;
-  height: 100vh;
   text-align: center;
 }
 .container {
-  position: relative;
-  top: 50%;
-  transform: translate(0, -50%);
   background-color: rgba(255, 255, 255, 0.8);
-  max-width: 80%;
-  padding: 20px;
+  border-radius: 1.3vw;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0) !important;
 }
 .profile-pic {
-  width: 150px;
-  border: 5px solid #fef6c7;
   border-radius: 50%;
   overflow: hidden;
   margin: auto;
-}
-.profile-name {
-  margin: 10px auto;
-}
-.profile-name h1 {
-  font-size: 40px;
-  font-weight: 700;
-}
-.profile-name h2 {
-  font-size: 22px;
-  font-weight: 400;
 }
 .profile-name span {
   color: #ff4e01;
@@ -42,13 +26,115 @@
   margin: 40px auto;
   text-align: justify;
 }
-.projects {
-  height: 90%;
+.btn {
+  margin: 0px 2px;
+}
+.btn-primary {
+  background-color: #ff4e01;
+  border-color: #ff4e01;
+}
+.btn-outline-primary {
+  color: #ff4e01;
+  border-color: #ff4e01;
+}
+.btn-outline-primary:hover {
+  color: #fff;
+  background-color: #ff4e01;
+  border-color: #ff4e01;
+}
+.projects-container {
+  max-height: 90%;
   margin: 5%;
-  padding: 50px;
+  padding: 5%;
+  border-radius: 1.3vw;
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0) !important;
 }
-.projects h1 {
+.projects-container h1 {
   font-size: 32px;
   font-weight: 700;
+  padding-bottom: 5%;
+  border-bottom: 1px solid black;
+}
+/*******************************
+********** Phone Screen **********
+*******************************/
+@media (max-width: 576px) {
+  .profile-pic {
+    width: 120px;
+    border: 2px solid #fef6c7;
+  }
+  .profile-name h1 {
+    font-size: 26px;
+    font-weight: 700;
+  }
+  .profile-name h2 {
+    font-size: 16px;
+  }
+  .projects-container {
+    padding: 10%;
+  }
+  .projects-container h1 {
+    font-size: 24px;
+  }
+}
+/*******************************
+********** Tablet Screen **********
+*******************************/
+@media (max-width: 991px) {
+  .container {
+    max-width: 90%;
+    padding: 20px;
+    margin: 20px auto;
+  }
+  .profile-pic {
+    width: 150px;
+    border: 5px solid #fef6c7;
+  }
+  .projects-container {
+    margin-bottom: 16vw;
+  }
+}
+/*******************************
+********** PC Screen **********
+*******************************/
+@media (min-width: 992px) {
+  .profile-col {
+    height: 100vh;
+  }
+  .container {
+    max-width: 60%;
+    padding: 1vw;
+    margin: 1vw auto;
+    position: relative;
+    top: 50%;
+    transform: translate(0, -50%);
+  }
+  .profile-pic {
+    width: 7.8125vw;
+    border: 0.26vw solid #fef6c7;
+  }
+  .profile-name h1 {
+    font-size: 2.083vw;
+    font-weight: 700;
+  }
+  .profile-name h2 {
+    font-size: 1.146vw;
+    font-weight: 400;
+  }
+  .profile-paragraph {
+    margin: 2.083vw auto;
+    font-size: 0.73vw;
+  }
+  .btn {
+    margin: 0px 0.1vw;
+    font-size: 0.833vw;
+  }
+  .projects-container {
+    position: relative;
+    top: 50%;
+    transform: translate(0, -50%);
+  }
+  .projects-container h1 {
+    font-size: 1.666vw;
+  }
 }

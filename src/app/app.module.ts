@@ -9,6 +9,9 @@ import { ServiceBoxComponent } from './components/services/service-box/service-b
 import { MainComponent } from './components/main/main.component';
 import { ShootingStarComponent } from './components/main/shooting-star/shooting-star.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { AboutComponent } from './components/about/about.component';
+import { ProjectComponent } from './components/about/project/project.component';
+import { ContactComponent } from './components/contact/contact.component';
 
 @NgModule({
   declarations: [
@@ -19,6 +22,9 @@ import { FooterComponent } from './components/footer/footer.component';
     MainComponent,
     ShootingStarComponent,
     FooterComponent,
+    AboutComponent,
+    ProjectComponent,
+    ContactComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
