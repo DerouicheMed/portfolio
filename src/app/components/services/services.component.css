@@ -63,3 +63,8 @@ h2 {
     font-size: 1.1vw;
   }
 }
+@media (min-width: 1920px) {
+  .container {
+    max-width: 100%;
+  }
+}
