@@ -1,139 +1,65 @@
 #services {
-  background-image: url("/assets/img/services_bg.jpg");
-  overflow: hidden;
+  background-image: url("/assets/img/main_background.jpg");
+  overflow-x: hidden;
 }
-.row,
-.col-lg-6,
-.col-12 {
-  margin: 0px;
-  padding: 0px;
+h1 {
+  font-weight: 700;
 }
+h2 {
+  font-weight: 400;
+}
+
 /***************************
 *********Phone screen*******
 ****************************/
 @media (max-width: 576px) {
-  .display-message h1 {
-    font-size: 7vw !important;
+  .service-list {
+    margin-bottom: 10.5vw;
   }
-  .display-message h3 {
-    font-size: 4vw !important;
+  .row {
+    padding: 50px 0px;
+  }
+  h1 {
+    font-size: 24px !important;
+  }
+  h2 {
+    font-size: 16px !important;
   }
 }
 /***************************
 *********Tablet screen*******
 ****************************/
-@media (max-width: 991px) {
-  .starship,
-  .arrows {
-    display: none;
+@media (min-width: 576px) {
+  .container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
-  .display-message {
-    position: relative;
-    background-color: rgba(255, 255, 255, 0.8);
-    padding: 2vh 5vw;
-    border-radius: 25px;
-    margin: 2vh 2vh 5vh 2vh;
-    color: black;
-  }
-  .display-message h1 {
-    font-size: 4vw;
-    font-weight: 700;
-  }
-  .display-message h3 {
-    font-size: 2vw;
-    font-weight: 400;
-  }
-  .service-list {
-    height: 70vh;
-    overflow-y: hidden;
-    overflow-x: scroll;
-    -webkit-overflow-scrolling: touch;
-  }
-  .service-list::-webkit-scrollbar {
-    display: none;
+  .display-message h2 {
+    font-size: 16px;
   }
 }
 /***************************
 ********** Big screen*******
 ****************************/
 @media (min-width: 992px) {
-  .row,
-  .col-lg-6 {
-    height: 100vh;
-  }
-  .display-message {
-    position: relative;
+  .container {
+    position: absolute;
     top: 50%;
-    height: 31.25vw;
-    width: 70%;
-    margin-left: 30%;
-    padding: 2vw;
-    border-radius: 2.5vw;
-    background-color: rgba(255, 255, 255, 09);
-    transform: translate(0, -50%);
-    z-index: 5;
-    background-image: url("/assets/img/services_bg.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
   .service-list {
-    position: absolute;
     height: 37vw;
-    top: 50vh;
-    left: 0px;
-    transform: translate(10%, -50%);
     overflow: hidden;
     transition: left 300ms ease;
     z-index: 2;
   }
-  .slide-service-list {
-    left: -19vw;
+  h1 {
+    font-size: 2vw;
   }
-  /** arrow buttons **/
-  .arrows {
-    position: absolute;
-    top: 86vh;
-    left: 2vw;
-    z-index: 3;
-  }
-  .btn-arrow {
-    position: relative;
-    width: 2.6vw;
-    height: 2.6vw;
-    border-radius: 50%;
-    background-color: rgba(0, 0, 0, 0.3);
-    margin: 0.05vw;
-  }
-  .btn-arrow i {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    font-size: 0.83vw;
-    transform: translate(-50%, -50%);
-    color: white;
-    opacity: 0.6;
-  }
-  /**Starship animation**/
-  .starship {
-    position: absolute;
-    top: 40vh;
-    left: 36vw;
-    width: 7.8vw;
-    animation-name: starhip_wobble;
-    animation-duration: 10000ms;
-    animation-iteration-count: infinite;
-  }
-  .starship img {
-    width: 100%;
-  }
-
-  @keyframes starhip_wobble {
-    25% {
-      transform: rotateZ(-10deg) translate(40%);
-    }
-    75% {
-      transform: rotateZ(40deg) translate(-10%);
-    }
+  h2 {
+    font-size: 1.1vw;
   }
 }

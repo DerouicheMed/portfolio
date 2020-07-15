@@ -6,6 +6,7 @@ import {
   ServicesComponent,
   AboutComponent,
   ContactComponent,
+  SocialsComponent,
 } from './components';
 
 const routes: Routes = [
@@ -25,6 +26,11 @@ const routes: Routes = [
     path: 'contact',
     component: ContactComponent,
   },
+  {
+    path: 'socials',
+    component: SocialsComponent,
+  },
+  { path: '**', redirectTo: '/' },
 ];
 
 @NgModule({

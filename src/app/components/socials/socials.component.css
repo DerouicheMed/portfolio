@@ -1,0 +1,162 @@
+#socials {
+  overflow-x: hidden;
+  background-image: url("/assets/img/socials_bg.jpg");
+}
+.main-row {
+  text-align: center;
+  margin: auto;
+}
+h1 {
+  font-weight: 700;
+}
+h2 {
+  font-weight: 400;
+}
+.box {
+  width: 100%;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0) !important;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.facebook-box {
+  background-image: url("/assets/img/facebook.png");
+}
+.instagram-box {
+  background-image: url("/assets/img/instagram.png");
+}
+.linkedin-box {
+  background-image: url("/assets/img/linkedIn.png");
+}
+.github-box {
+  background-image: url("/assets/img/github.png");
+}
+.fiverr-box {
+  background-image: url("/assets/img/fiverr.png");
+}
+.btn {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding: 0px;
+  border: none;
+  overflow: hidden;
+}
+.social-link {
+  height: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+}
+.social-link h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+/***************************
+********** phone screen*******
+****************************/
+@media (max-width: 575px) {
+  .main-row {
+    padding: 50px 0px;
+  }
+  h1 {
+    font-size: 24px;
+  }
+  h2 {
+    font-size: 16px;
+  }
+  .box {
+    margin: 10px 0;
+    height: 100px;
+  }
+  .social-link h1 {
+    font-size: 24px;
+  }
+}
+/***************************
+********** tablet screen*******
+****************************/
+@media (min-width: 576px) {
+  .main-row {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .socials-grid {
+    margin: auto;
+    width: 90vw;
+  }
+  h2 {
+    font-size: 16px;
+  }
+  .col-sm-4 {
+    padding: 5px;
+  }
+  .box {
+    margin: 10px 0;
+  }
+  .facebook-box {
+    height: 200px;
+    background-position: left;
+  }
+  .instagram-box {
+    height: 400px;
+  }
+  .linkedin-box {
+    height: 350px;
+  }
+  .github-box {
+    height: 250px;
+  }
+  .fiverr-box {
+    height: 610px;
+  }
+  .social-link h1 {
+    font-size: 24px;
+  }
+}
+/***************************
+********** PC screen*******
+****************************/
+@media (min-width: 992px) {
+  .socials-grid {
+    width: 50vw;
+  }
+  h1 {
+    font-size: 2vw;
+  }
+  h2 {
+    font-size: 1.1vw;
+  }
+  .facebook-box {
+    height: 13vw;
+    background-position: left;
+  }
+  .instagram-box {
+    height: 20vw;
+  }
+  .linkedin-box {
+    height: 23vw;
+  }
+  .github-box {
+    height: 10vw;
+  }
+  .fiverr-box {
+    height: 33.5vw;
+  }
+  .btn {
+    position: relative;
+    width: 100%;
+    height: 0%;
+    padding: 0px;
+    border: none;
+    overflow: hidden;
+    transition: height 100ms ease;
+  }
+  .box:hover .btn {
+    height: 100%;
+  }
+}

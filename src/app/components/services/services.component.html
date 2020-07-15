@@ -1,31 +1,24 @@
 <section id="services">
-  <div class="row">
-    <div class="col-lg-5 col-sm-7 col-12">
-      <div class="display-message">
-        <h1>Services</h1>
-        <h3>
-          Bellow are some of the services I provide. Feel free to contact me at
-          anytime
-        </h3>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12">
+        <div class="display-message text-center">
+          <h1>Services</h1>
+          <h2>
+            Bellow are some of the services I provide. Feel free to contact me
+            at anytime
+          </h2>
+        </div>
+      </div>
+      <div class="col-sm-12">
+        <div
+          class="service-list d-flex flex-column flex-sm-row justify-content-center"
+        >
+          <app-service-box [service]="service_2"></app-service-box>
+          <app-service-box [service]="service_1"></app-service-box>
+          <app-service-box [service]="service_3"></app-service-box>
+        </div>
       </div>
     </div>
-    <div class="col-lg-7 col-12">
-      <div class="service-list d-flex">
-        <app-service-box [service]="service_1"></app-service-box>
-        <app-service-box [service]="service_2"></app-service-box>
-        <app-service-box [service]="service_3"></app-service-box>
-      </div>
-      <div class="arrows">
-        <button class="btn btn-arrow" (click)="slideLeft()">
-          <i class="fas fa-arrow-left"></i>
-        </button>
-        <button class="btn btn-arrow" (click)="slideRight()">
-          <i class="fas fa-arrow-right"></i>
-        </button>
-      </div>
-    </div>
-  </div>
-  <div class="starship">
-    <img src="assets/img/starship.png" alt="starship" />
   </div>
 </section>

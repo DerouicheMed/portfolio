@@ -15,10 +15,11 @@ section {
   font-weight: 700;
 }
 
-.display-message p {
+.display-message h2 {
   font-family: "Roboto", sans-serif;
   font-size: 1.1vw;
   font-weight: 300;
+  margin-bottom: 0.8vw;
 }
 .btn-more {
   position: relative;
@@ -68,7 +69,7 @@ section {
     font-size: 5vw;
   }
 
-  .display-message p {
+  .display-message h2 {
     font-size: 1.5vh;
   }
   .btn-more {
@@ -84,9 +85,9 @@ section {
   .display-message h1 {
     font-size: 7vw;
   }
-
-  .display-message p {
+  .display-message h2 {
     font-size: 2vh;
+    margin-bottom: 15px;
   }
   .btn-more {
     width: 60%;

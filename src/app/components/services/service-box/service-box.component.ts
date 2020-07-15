@@ -8,10 +8,49 @@ declare var $;
 })
 export class ServiceBoxComponent implements OnInit {
   @Input() service;
+  toggleBox = false;
 
   constructor() {}
 
   ngOnInit(): void {}
+
+  toggleServiceBox = (serviceId) => {
+    switch (serviceId) {
+      case 'service-1': {
+        if (this.toggleBox) {
+          $('#service-1').removeClass('expand-box');
+          $('.btn-contact').addClass('d-none');
+        } else {
+          $('#service-1').addClass('expand-box');
+          $('.btn-contact').removeClass('d-none');
+        }
+        this.toggleBox = !this.toggleBox;
+        break;
+      }
+      case 'service-2': {
+        if (this.toggleBox) {
+          $('#service-2').removeClass('expand-box');
+          $('.btn-contact').addClass('d-none');
+        } else {
+          $('#service-2').addClass('expand-box');
+          $('.btn-contact').removeClass('d-none');
+        }
+        this.toggleBox = !this.toggleBox;
+        break;
+      }
+      case 'service-3': {
+        if (this.toggleBox) {
+          $('#service-3').removeClass('expand-box');
+          $('.btn-contact').addClass('d-none');
+        } else {
+          $('#service-3').addClass('expand-box');
+          $('.btn-contact').removeClass('d-none');
+        }
+        this.toggleBox = !this.toggleBox;
+        break;
+      }
+    }
+  };
 
   onMouseEnter = (serviceId) => {
     switch (serviceId) {

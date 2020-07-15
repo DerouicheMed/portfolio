@@ -9,6 +9,15 @@
     <hr />
     <h3>{{ service.heading }}</h3>
     <p>{{ service.paragraph }}</p>
-    <a class="btn btn-contact" [routerLink]="['/services']">Contact Me</a>
+    <a class="btn btn-contact d-none d-sm-inline" [routerLink]="['/contact']"
+      >Contact Me</a
+    >
+    <button
+      class="btn-expand-service d-sm-none"
+      (click)="toggleServiceBox(service.id)"
+    >
+      <i *ngIf="!toggleBox" class="fas fa-plus"></i>
+      <i *ngIf="toggleBox" class="fas fa-minus"></i>
+    </button>
   </div>
 </div>

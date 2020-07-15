@@ -1,13 +1,13 @@
 #contact {
-  overflow: hidden;
+  overflow-x: hidden;
   background-image: url("/assets/img/contact_bg.jpg");
 }
 .contact-box {
   background-color: rgba(255, 255, 255);
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0) !important;
+  border-radius: 1.3vw;
   color: black;
 }
-
 .contact-box h1 {
   font-weight: 700;
 }
@@ -24,14 +24,24 @@ button {
   width: 100%;
 }
 /*******************************
+********** phone Screen **********
+*******************************/
+@media (max-width: 575px) {
+  h1 {
+    font-size: 24px !important;
+  }
+  h2 {
+    font-size: 16px !important;
+  }
+}
+/*******************************
 ********** tablet Screen **********
 *******************************/
 @media (max-width: 991px) {
   .contact-box {
     padding: 20px 15px;
     text-align: center;
-    margin: 15px;
-    border-radius: 25px;
+    margin: 15px 15px 60px 15px;
   }
   h1 {
     font-size: 32px;
@@ -62,7 +72,6 @@ button {
     transform: translate(-50%, -50%);
     padding: 2vw 5vw;
     text-align: center;
-    border-radius: 1.3vw;
   }
   h1,
   h2 {
