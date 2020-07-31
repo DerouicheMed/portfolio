@@ -9,7 +9,7 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 export class ContactComponent implements OnInit {
   contactForm: FormGroup;
   submitted = false;
-  status = null;
+  status = undefined;
 
   constructor(private formBuilder: FormBuilder) {}
 
@@ -18,7 +18,7 @@ export class ContactComponent implements OnInit {
       name: ['', Validators.required],
       subject: ['', Validators.required],
       text: ['', Validators.required],
-      email: ['', [Validators.required, Validators.email]],
+      email: ['', Validators.required],
     });
   }
 
@@ -32,6 +32,7 @@ export class ContactComponent implements OnInit {
 
     //if form is valid send form
     if (this.contactForm.valid) {
+      this.status = null;
       //create a new form data object
       let formData = new FormData();
       //add elements to form data object
@@ -42,7 +43,7 @@ export class ContactComponent implements OnInit {
 
       const data = formData;
       const xhr = new XMLHttpRequest();
-      xhr.open('POST', 'https://formspree.io/xaypvqoer');
+      xhr.open('POST', 'https://formspree.io/xaypvqoe');
       xhr.setRequestHeader('Accept', 'application/json');
       xhr.onreadystatechange = () => {
         if (xhr.readyState !== XMLHttpRequest.DONE) return;

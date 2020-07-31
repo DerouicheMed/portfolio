@@ -22,6 +22,8 @@ form input {
 }
 button {
   width: 100%;
+  background-image: linear-gradient(#fe0072, #ff0046);
+  border: none;
 }
 /*******************************
 ********** phone Screen **********
