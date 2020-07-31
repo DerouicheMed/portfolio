@@ -57,28 +57,41 @@ p {
   font-weight: 400;
   background-image: linear-gradient(#fe0072, #ff0046);
 }
-
-/***************************
-*********phone screen*******
-****************************/
 @media (max-width: 575px) {
-  .box {
-    border-radius: 10vw;
-  }
-  .box {
-    height: 200px;
-    width: 100%;
-    margin: 0px 0px 5px 0px !important;
-  }
+  .box,
   .inside {
-    bottom: 0px;
-    background-color: rgba(255, 255, 255, 0.8);
+    min-height: 200px !important;
   }
   .box h3 {
     font-size: 20px;
   }
   .box p {
     font-size: 14px;
+    margin-bottom: 5px;
+  }
+}
+/***************************
+*********medium screen*******
+****************************/
+@media (max-width: 767px) {
+  .box {
+    min-height: 250px;
+    width: 100%;
+    margin: 0px 0px 5px 0px !important;
+    border-radius: 10vw;
+  }
+  .inside {
+    position: relative !important;
+    min-height: 250px;
+    bottom: 0px;
+    background-color: rgba(255, 255, 255, 0.8);
+  }
+  .box h3 {
+    font-size: 24px;
+  }
+  .box p {
+    font-size: 16px;
+    margin-bottom: 5px;
   }
   .box hr {
     display: none;
@@ -90,44 +103,29 @@ p {
     padding: 10px 0px;
     width: 80%;
   }
-  .btn-expand-service {
-    position: absolute;
-    bottom: 10%;
-    right: 5%;
+  .btn-contact-small {
     width: 50px;
     height: 50px;
-    background-image: linear-gradient(#fe0072, #ff0046);
+
     border-radius: 50%;
     border: transparent;
     color: white;
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0) !important;
   }
-  .expand-box {
-    width: 100vw !important;
-    height: 100vh !important;
-    margin: 0px !important;
-    position: absolute;
-    border-radius: 0px !important;
-    top: -132px;
-    left: 0px;
-    z-index: 10;
-  }
-  .expand-box h3 {
-    text-align: center;
-    font-size: 32px;
-  }
-  .expand-box p {
-    font-size: 24px;
-    font-weight: 500;
+  .btn-contact-small i {
+    font-size: 15px;
+    padding: 15px;
+    background-image: linear-gradient(#fe0072, #ff0046);
+    border-radius: 50%;
   }
 }
 /***************************
 *********Tablet screen*******
 ****************************/
-@media (min-width: 576px) {
+@media (min-width: 768px) {
   .box,
   .inside {
-    border-radius: 5vw;
+    border-radius: 3vw;
   }
   .box {
     height: 30vh;

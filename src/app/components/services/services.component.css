@@ -12,7 +12,7 @@ h2 {
 /***************************
 *********Phone screen*******
 ****************************/
-@media (max-width: 576px) {
+@media (max-width: 767px) {
   .service-list {
     margin-bottom: 10.5vw;
   }
@@ -29,7 +29,7 @@ h2 {
 /***************************
 *********Tablet screen*******
 ****************************/
-@media (min-width: 576px) {
+@media (min-width: 768px) {
   .container {
     position: absolute;
     top: 50%;
