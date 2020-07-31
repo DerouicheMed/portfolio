@@ -41,7 +41,7 @@ button {
   .contact-box {
     padding: 20px 15px;
     text-align: center;
-    margin: 15px 15px 60px 15px;
+    margin: 15px 15px 17vw 15px;
   }
   h1 {
     font-size: 32px;
@@ -65,7 +65,6 @@ button {
   }
   .contact-box {
     width: 40vw;
-    height: 40vw;
     position: absolute;
     top: 50%;
     left: 50%;

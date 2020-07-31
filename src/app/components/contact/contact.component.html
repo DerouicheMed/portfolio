@@ -6,43 +6,78 @@
         <h2>
           Feel free to contact me and let's get you all set up with your project
         </h2>
-        <form>
+        <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
           <div class="form-group">
             <input
               type="text"
-              class="form-control"
-              id="exampleInputPassword1"
+              formControlName="name"
+              [ngClass]="{
+                'form-control': true,
+                'is-invalid': submitted && f.name.errors
+              }"
               placeholder="Enter you name"
             />
           </div>
           <div class="form-group">
             <input
               type="email"
-              class="form-control"
-              id="exampleInputEmail1"
+              formControlName="email"
+              [ngClass]="{
+                'form-control': true,
+                'is-invalid': submitted && f.email.errors
+              }"
               placeholder="Enter your email address"
             />
           </div>
           <div class="form-group">
             <input
               type="text"
-              class="form-control"
-              id="exampleInputPassword1"
+              formControlName="subject"
+              [ngClass]="{
+                'form-control': true,
+                'is-invalid': submitted && f.subject.errors
+              }"
               placeholder="Enter email subject"
             />
           </div>
           <div class="form-group">
             <textarea
               type="text"
-              class="form-control"
-              id="exampleInputEmail1"
+              formControlName="text"
+              [ngClass]="{
+                'form-control': true,
+                'is-invalid': submitted && f.text.errors
+              }"
               placeholder="Enter your message"
               rows="10"
               maxlength="500"
               style="resize: none;"
             ></textarea>
           </div>
-
+          <div class="form-group">
+            <div
+              *ngIf="submitted && contactForm.invalid"
+              class="alert alert-danger"
+            >
+              <small>Please all inputs are required</small>
+            </div>
+          </div>
+          <div class="form-group">
+            <div
+              *ngIf="submitted && status !== null && status === 'SUCCESS'"
+              class="alert alert-success"
+            >
+              <small>Thank you ! Your email has been sent successfully</small>
+            </div>
+          </div>
+          <div class="form-group">
+            <div
+              *ngIf="submitted && status !== null && status === 'ERROR'"
+              class="alert alert-danger"
+            >
+              <small>Something went wrong. Please try again later !</small>
+            </div>
+          </div>
           <button type="submit" class="btn btn-primary">Submit</button>
         </form>
       </div>
