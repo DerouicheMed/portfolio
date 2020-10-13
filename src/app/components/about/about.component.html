@@ -8,7 +8,7 @@
               <img
                 class="img-fluid"
                 src="assets/img/profile_pic.jpg"
-                alt="Derouiche Mohamed Full Stack Web Developer React Angular UI/UX Designer Freelance Tunis Bizerte Tunisie developpeur solution"
+                alt="Derouiche Mohamed Full Stack Web Developer React Angular UI/UX Designer Freelance Tunis Bizerte Tunisie developpeur solution Création site internet e-commerce "
               />
             </div>
             <div class="profile-name">
@@ -42,14 +42,12 @@
       </div>
     </div>
     <div class="col-lg-6 projects-col">
-      <div class="projects-container">
-        <div class="row">
-          <div class="col-12">
-            <h1>Projects I worked on :</h1>
+      <div class="projects">
+        <h1>Projects I worked on</h1>
+        <div class="projects-container">
+          <div *ngFor="let project of projects">
+            <app-project [project]="project"></app-project>
           </div>
-        </div>
-        <div *ngFor="let project of projects">
-          <app-project [project]="project"></app-project>
         </div>
       </div>
     </div>

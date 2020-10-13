@@ -1,11 +1,38 @@
-<div class="row">
-  <div class="col-12">
-    <div class="project">
-      <h5 class="project-title">{{ project.title }}</h5>
-      <h5 class="project-link">{{ project.link }}</h5>
-      <p class="project-description">
-        {{ project.description }}
-      </p>
+<div class="projects-container">
+  <img
+    class="project-bg"
+    src="assets/img/project-bg-{{ project.id }}.png"
+    alt=""
+  />
+  <div class="project-title">
+    <h1>{{ project.title }}</h1>
+  </div>
+  <div class="project-technologies">
+    <p>{{ project.technologies }}</p>
+  </div>
+  <div class="link-section">
+    <a *ngIf="project.github !== 'private'" href="{{ project.github }}"
+      >Source Code
+    </a>
+    <span *ngIf="project.github === 'private'">Code is private</span>
+    |
+    <a *ngIf="project.website !== 'not hosted'" href="{{ project.website }}">
+      website url</a
+    >
+    <span *ngIf="project.website === 'not hosted'">Website not hosted</span>
+  </div>
+  <div class="project-description">
+    <p>{{ project.description }}</p>
+  </div>
+  <div class="project-screenshots">
+    <div *ngFor="let screenshot of project.screenshots">
+      <a
+        href="assets/img/projects{{ screenshot }}"
+        data-lightbox="image-1"
+        data-title="My caption"
+      >
+        <img src="assets/img/projects{{ screenshot }}" alt="" />
+      </a>
     </div>
   </div>
 </div>

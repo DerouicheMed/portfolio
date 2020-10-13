@@ -19,6 +19,9 @@
   overflow: hidden;
   margin: auto;
 }
+.profile-name h1 {
+  font-weight: 700;
+}
 .profile-name span {
   color: #ff4e01;
 }
@@ -43,17 +46,19 @@
   border-color: #ff4e01;
 }
 .projects-container {
-  max-height: 90%;
-  margin: 5%;
-  padding: 5%;
-  border-radius: 1.3vw;
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0) !important;
+  display: flex;
+  overflow-x: scroll;
 }
-.projects-container h1 {
-  font-size: 32px;
-  font-weight: 700;
-  padding-bottom: 5%;
-  border-bottom: 1px solid black;
+.projects-container::-webkit-scrollbar {
+  width: 5px;
+  height: 8px;
+  background-color: #fff;
+}
+.projects-container::-webkit-scrollbar-thumb {
+  width: 5px;
+  height: 8px;
+  background-color: #ff4e01;
+  border-radius: 25px;
 }
 /*******************************
 ********** Phone Screen **********
@@ -65,13 +70,12 @@
   }
   .profile-name h1 {
     font-size: 26px;
-    font-weight: 700;
   }
   .profile-name h2 {
     font-size: 16px;
   }
   .projects-container {
-    padding: 10%;
+    padding: 10px;
   }
   .projects-container h1 {
     font-size: 24px;
@@ -89,6 +93,14 @@
   .profile-pic {
     width: 150px;
     border: 5px solid #fef6c7;
+  }
+  .projects {
+    padding-top: 20px;
+  }
+  .projects h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: center;
   }
   .projects-container {
     margin-bottom: 16vw;
@@ -115,7 +127,6 @@
   }
   .profile-name h1 {
     font-size: 2.083vw;
-    font-weight: 700;
   }
   .profile-name h2 {
     font-size: 1.146vw;
@@ -129,12 +140,13 @@
     margin: 0px 0.1vw;
     font-size: 0.833vw;
   }
-  .projects-container {
+  .projects {
     position: relative;
     top: 50%;
     transform: translate(0, -50%);
   }
-  .projects-container h1 {
+  .projects h1 {
     font-size: 1.666vw;
+    font-weight: 700;
   }
 }
