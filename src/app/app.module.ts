@@ -14,6 +14,7 @@ import { AboutComponent } from './components/about/about.component';
 import { ProjectComponent } from './components/about/project/project.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { SocialsComponent } from './components/socials/socials.component';
+import { AnnounecementComponent } from './components/announecement/announecement.component';
 
 @NgModule({
   declarations: [
@@ -28,6 +29,7 @@ import { SocialsComponent } from './components/socials/socials.component';
     ProjectComponent,
     ContactComponent,
     SocialsComponent,
+    AnnounecementComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, ReactiveFormsModule],
   providers: [],

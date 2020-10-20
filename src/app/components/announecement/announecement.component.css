@@ -1,0 +1,69 @@
+#announcement {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  z-index: 9999;
+  height: 15.625vw;
+}
+.announcement-banner {
+  position: relative;
+  height: 15.625vw;
+  background-image: url("/assets/img/announcement-banner.jpg");
+  background-position: center;
+  background-size: cover;
+}
+.announcement-text {
+  position: absolute;
+  top: 50%;
+  left: 35%;
+  transform: translate(-35%, -50%);
+  width: 50%;
+}
+.announcement-text h1 {
+  font-size: 1.25vw;
+  font-weight: 700;
+}
+.btn-download-resume {
+  font-size: 0.9375vw;
+  font-weight: 700;
+  color: white;
+  border-color: white;
+}
+.btn-dispose-announcement {
+  position: absolute;
+  top: 1.25vw;
+  right: 1.25vw;
+  font-size: 2vw;
+  color: white;
+}
+@media (max-width: 575px) {
+  #announcement,
+  .announcement-banner {
+    height: 150px !important;
+  }
+  .announcement-text {
+    left: 15%;
+    transform: translate(-15%, -50%);
+  }
+  .announcement-text h1 {
+    font-size: 10px !important;
+  }
+  .btn-download-resume {
+    font-size: 10px !important;
+  }
+}
+@media (max-width: 991px) {
+  #announcement,
+  .announcement-banner {
+    height: 200px;
+  }
+  .announcement-text h1 {
+    font-size: 16px;
+  }
+  .btn-download-resume {
+    font-size: 12px;
+  }
+  .btn-dispose-announcement {
+    font-size: 32px;
+  }
+}
