@@ -26,8 +26,13 @@ export class AppComponent implements OnInit {
     }
   };
 
+  isLoaded: boolean = false;
+
   ngOnInit(): void {
     console.log(this.getBrowserName());
+    setTimeout(() => {
+      this.isLoaded = true;
+    }, 4500);
   }
 
   title = 'MyWebsite';

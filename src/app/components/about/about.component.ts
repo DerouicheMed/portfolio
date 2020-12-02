@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./about.component.css'],
 })
 export class AboutComponent implements OnInit {
+  isLoaded: boolean = false;
   projects = [
     {
       id: 6,

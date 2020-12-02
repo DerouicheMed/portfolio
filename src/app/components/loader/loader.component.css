@@ -1,0 +1,118 @@
+#loader {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background-color: white;
+  color: #000;
+  font-family: "Libre Barcode 128 Text", cursive;
+  letter-spacing: 0.15625vw;
+  font-weight: 700;
+  height: 100vh;
+  z-index: 9999;
+  animation: fadeOut 0.5s linear 1 normal forwards;
+  animation-delay: 4s;
+}
+#loader h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 3.64vw;
+  animation: fadeOut 1s linear 1 normal forwards;
+  animation-delay: 3s;
+}
+
+#span-1 {
+  animation: fadein 2s linear 1 normal forwards;
+  animation-delay: 0.2s;
+}
+#span-2 {
+  animation: fadein 2s linear 1 normal forwards;
+  animation-delay: 0.3s;
+}
+#span-3 {
+  animation: fadein 2s linear 1 normal forwards;
+  animation-delay: 0.4s;
+}
+#span-4 {
+  animation: fadein 2s linear 1 normal forwards;
+  animation-delay: 0.5s;
+}
+#span-5 {
+  animation: fadein 2s linear 1 normal forwards;
+  animation-delay: 0.6s;
+}
+#span-6 {
+  animation: fadein 2s linear 1 normal forwards;
+  animation-delay: 0.7s;
+}
+#span-7 {
+  animation: fadein 2s linear 1 normal forwards;
+  animation-delay: 0.8s;
+}
+
+#span-9 {
+  animation: fadein 2s linear 1 normal forwards;
+  animation-delay: 0.9s;
+}
+#span-10 {
+  animation: fadein 2s linear 1 normal forwards;
+  animation-delay: 1s;
+}
+#span-11 {
+  animation: fadein 2s linear 1 normal forwards;
+  animation-delay: 1.1s;
+}
+#span-12 {
+  animation: fadein 2s linear 1 normal forwards;
+  animation-delay: 1.2s;
+}
+#span-13 {
+  animation: fadein 2s linear 1 normal forwards;
+  animation-delay: 1.3s;
+}
+#span-14 {
+  animation: fadein 2s linear 1 normal forwards;
+  animation-delay: 1.4s;
+}
+#span-15 {
+  animation: fadein 2s linear 1 normal forwards;
+  animation-delay: 1.5s;
+}
+#span-16 {
+  animation: fadein 2s linear 1 normal forwards;
+  animation-delay: 1.6s;
+}
+#span-17 {
+  animation: fadein 2s linear 1 normal forwards;
+  animation-delay: 1.7s;
+}
+
+@keyframes fadein {
+  from {
+    color: white;
+  }
+  to {
+    color: black;
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+@media (max-width: 575px) {
+  #loader h1 {
+    font-size: 40px !important;
+  }
+}
+@media (max-width: 991px) {
+  #loader h1 {
+    font-size: 70px;
+  }
+}

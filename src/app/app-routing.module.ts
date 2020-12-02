@@ -7,6 +7,7 @@ import {
   AboutComponent,
   ContactComponent,
   SocialsComponent,
+  LoaderComponent,
 } from './components';
 
 const routes: Routes = [
@@ -29,6 +30,10 @@ const routes: Routes = [
   {
     path: 'socials',
     component: SocialsComponent,
+  },
+  {
+    path: 'loader',
+    component: LoaderComponent,
   },
   { path: '**', redirectTo: '/' },
 ];
