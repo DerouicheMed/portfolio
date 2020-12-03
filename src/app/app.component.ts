@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { NavigationStart, Router } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -6,6 +7,63 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent implements OnInit {
+  /** this variable storage if every page has been loaded once */
+  isLoaded = {
+    home: false,
+    services: false,
+    about: false,
+    contact: false,
+    socials: false,
+  };
+
+  /** this variable is used to display the loader */
+  displayLoader = false;
+
+  /**
+   * This function take the route url and checks if it has been loaded. if not, a loader will be displayed
+   * @param routeURL
+   */
+  checkIfLoaded = (routeURL) => {
+    switch (routeURL) {
+      case '/':
+        if (!this.isLoaded.home) {
+          this.displayLoader = true;
+          this.isLoaded.home = true;
+        }
+        break;
+      case '/services':
+        if (!this.isLoaded.services) {
+          this.displayLoader = true;
+          this.isLoaded.services = true;
+        }
+        break;
+      case '/about':
+        if (!this.isLoaded.about) {
+          this.displayLoader = true;
+          this.isLoaded.about = true;
+        }
+        break;
+      case '/contact':
+        if (!this.isLoaded.contact) {
+          this.displayLoader = true;
+          this.isLoaded.contact = true;
+        }
+        break;
+      case '/socials':
+        if (!this.isLoaded.socials) {
+          this.displayLoader = true;
+          this.isLoaded.socials = true;
+        }
+        break;
+    }
+    setTimeout(() => {
+      this.displayLoader = false;
+    }, 3500);
+  };
+
+  /**
+   * This function return the browser's type
+   */
   getBrowserName = () => {
     const agent = window.navigator.userAgent.toLowerCase();
     switch (true) {
@@ -26,14 +84,17 @@ export class AppComponent implements OnInit {
     }
   };
 
-  isLoaded: boolean = false;
-
-  ngOnInit(): void {
-    console.log(this.getBrowserName());
-    setTimeout(() => {
-      this.isLoaded = true;
-    }, 4500);
+  constructor(private router: Router) {
+    router.events.subscribe((route) => {
+      if (route instanceof NavigationStart) {
+        console.log(route.url);
+        this.checkIfLoaded(route.url);
+      }
+    });
   }
-
-  title = 'MyWebsite';
+  ngOnInit(): void {
+    if (this.getBrowserName() === 'ie') {
+      this.router.navigate(['error']);
+    }
+  }
 }

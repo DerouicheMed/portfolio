@@ -16,6 +16,7 @@ import { ContactComponent } from './components/contact/contact.component';
 import { SocialsComponent } from './components/socials/socials.component';
 import { AnnounecementComponent } from './components/announecement/announecement.component';
 import { LoaderComponent } from './components/loader/loader.component';
+import { ErrorComponent } from './components/error/error.component';
 
 @NgModule({
   declarations: [
@@ -32,6 +33,7 @@ import { LoaderComponent } from './components/loader/loader.component';
     SocialsComponent,
     AnnounecementComponent,
     LoaderComponent,
+    ErrorComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, ReactiveFormsModule],
   providers: [],

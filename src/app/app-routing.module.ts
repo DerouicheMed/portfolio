@@ -7,7 +7,7 @@ import {
   AboutComponent,
   ContactComponent,
   SocialsComponent,
-  LoaderComponent,
+  ErrorComponent,
 } from './components';
 
 const routes: Routes = [
@@ -32,8 +32,8 @@ const routes: Routes = [
     component: SocialsComponent,
   },
   {
-    path: 'loader',
-    component: LoaderComponent,
+    path: 'error',
+    component: ErrorComponent,
   },
   { path: '**', redirectTo: '/' },
 ];
