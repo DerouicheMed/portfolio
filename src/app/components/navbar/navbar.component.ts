@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { NavigationStart, Router } from '@angular/router';
 @Component({
   selector: 'app-navbar',
   templateUrl: './navbar.component.html',
@@ -6,11 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavbarComponent implements OnInit {
   indicator = '10000';
-  constructor() {}
-
-  ngOnInit(): void {
-    this.navigateTo(window.location.pathname);
+  constructor(private router: Router) {
+    router.events.subscribe((route) => {
+      if (route instanceof NavigationStart) {
+        this.navigateTo(route.url);
+      }
+    });
   }
+
+  ngOnInit(): void {}
 
   navigateTo(destination: string) {
     switch (destination) {
