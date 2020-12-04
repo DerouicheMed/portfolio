@@ -58,7 +58,7 @@ export class AppComponent implements OnInit {
     }
     setTimeout(() => {
       this.displayLoader = false;
-    }, 3500);
+    }, 2100);
   };
 
   /**
