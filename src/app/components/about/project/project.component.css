@@ -46,11 +46,12 @@
   display: flex;
 }
 .project-screenshots::-webkit-scrollbar {
-  height: 5px;
-  background-color: transparent;
+  height: 8px;
+  cursor: pointer !important;
+  border-radius: 25px;
 }
 .project-screenshots::-webkit-scrollbar-thumb {
-  height: 5px;
+  height: 8px;
   background-color: #fff;
   border-radius: 25px;
 }

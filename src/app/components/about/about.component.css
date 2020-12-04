@@ -51,12 +51,13 @@
 }
 .projects-container::-webkit-scrollbar {
   width: 5px;
-  height: 8px;
-  background-color: #fff;
+  height: 10px;
+  background-color: #ddd;
+  border-radius: 25px;
 }
 .projects-container::-webkit-scrollbar-thumb {
   width: 5px;
-  height: 8px;
+  height: 10px;
   background-color: #ff4e01;
   border-radius: 25px;
 }
