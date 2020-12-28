@@ -29,6 +29,51 @@ section {
   font-size: 1vw;
   font-weight: 400;
 }
+/**Phone**/
+@media (max-width: 575px) {
+  .display-message h1 {
+    font-size: 26px !important;
+  }
+
+  .display-message h2 {
+    font-size: 16px !important;
+    margin-bottom: 27px;
+    font-weight: 400;
+  }
+  .btn-more {
+    color: white;
+    border-radius: 25px;
+    padding: 0.5vw 3vw;
+    font-size: 16px;
+    font-weight: 400;
+    width: 100%;
+  }
+}
+@media (max-width: 991px) {
+  .display-message {
+    left: 10%;
+    width: 80%;
+    max-width: none;
+    text-align: center;
+    transform: translateY(-70%);
+  }
+  .display-message h1 {
+    font-size: 40px;
+  }
+
+  .display-message h2 {
+    font-size: 18px;
+    margin-bottom: 32px;
+  }
+  .btn-more {
+    padding: 1.5vw 8vw;
+    border-radius: 25px;
+    font-size: 18px;
+    font-weight: 700;
+    width: 80%;
+    background-image: linear-gradient(#fe0072, #ff0046);
+  }
+}
 @media (min-width: 992px) {
   .btn-more {
     border-radius: 1.3vw;
@@ -55,43 +100,5 @@ section {
   }
   .btn-more:hover::after {
     opacity: 1;
-  }
-}
-@media (max-width: 991px) {
-  .display-message {
-    left: 10%;
-    width: 80%;
-    max-width: none;
-    text-align: center;
-    transform: translateY(-70%);
-  }
-  .display-message h1 {
-    font-size: 5vw;
-  }
-
-  .display-message h2 {
-    font-size: 1.5vh;
-  }
-  .btn-more {
-    margin-top: 1vw;
-    padding: 1.5vw 8vw;
-    border-radius: 5vw;
-    font-size: 20px;
-    font-weight: 700;
-    background-image: linear-gradient(#fe0072, #ff0046);
-  }
-}
-@media (max-width: 576px) {
-  .display-message h1 {
-    font-size: 7vw;
-  }
-  .display-message h2 {
-    font-size: 2vh;
-    margin-bottom: 15px;
-  }
-  .btn-more {
-    width: 60%;
-    padding: 2vw 8vw;
-    font-size: 16px;
   }
 }

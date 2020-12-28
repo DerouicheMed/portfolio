@@ -20,19 +20,19 @@ h2 {
   background-repeat: no-repeat;
 }
 .facebook-box {
-  background-image: url("/assets/img/facebook.png");
+  background-image: url("/assets/img/facebook.jpg");
 }
 .instagram-box {
-  background-image: url("/assets/img/instagram.png");
+  background-image: url("/assets/img/instagram.jpg");
 }
 .linkedin-box {
-  background-image: url("/assets/img/linkedIn.png");
+  background-image: url("/assets/img/linkedIn.jpg");
 }
 .github-box {
-  background-image: url("/assets/img/github.png");
+  background-image: url("/assets/img/github.jpg");
 }
 .fiverr-box {
-  background-image: url("/assets/img/fiverr.png");
+  background-image: url("/assets/img/fiverr.jpg");
 }
 .btn {
   position: relative;

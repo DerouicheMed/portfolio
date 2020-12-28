@@ -16,9 +16,9 @@ export class AboutComponent implements OnInit {
       description: 'A web app for searching and buying ebooks',
       technologies: `React js, Node js, express js, MongoDB, Paypal API `,
       screenshots: [
-        '/getyourbooknow/1.jpg',
-        '/getyourbooknow/2.jpg',
-        '/getyourbooknow/3.jpg',
+        '/getyourbooknow/1',
+        '/getyourbooknow/2',
+        '/getyourbooknow/3',
       ],
     },
     {
@@ -29,9 +29,9 @@ export class AboutComponent implements OnInit {
       description: 'A photography portfolio',
       technologies: `HTML, CSS, JavaScript/JQuery, Bootstrap 4`,
       screenshots: [
-        '/daadiphotography/1.jpg',
-        '/daadiphotography/2.jpg',
-        '/daadiphotography/3.jpg',
+        '/daadiphotography/1',
+        '/daadiphotography/2',
+        '/daadiphotography/3',
       ],
     },
     {
@@ -42,11 +42,7 @@ export class AboutComponent implements OnInit {
       description:
         'A web app for creating and publishing surveys and analysing client data.',
       technologies: `React js, Node js, Express js, MongoDB`,
-      screenshots: [
-        '/customy/survey1.png',
-        '/customy/survey2.png',
-        '/customy/survey3.png',
-      ],
+      screenshots: ['/customy/1', '/customy/2', '/customy/3'],
     },
     {
       id: 2,
@@ -56,11 +52,7 @@ export class AboutComponent implements OnInit {
       description:
         'A Q&A web forum with voting and email notifications features ',
       technologies: `Angular 7, Spring boot 2.x, Spring Security, Hibernate, JPA, PostegreSQL, Liquibase`,
-      screenshots: [
-        '/thinkforum/1.jpg',
-        '/thinkforum/2.jpg',
-        '/thinkforum/3.jpg',
-      ],
+      screenshots: ['/thinkforum/1', '/thinkforum/2', '/thinkforum/3'],
     },
     {
       id: 3,
@@ -70,7 +62,7 @@ export class AboutComponent implements OnInit {
       description:
         'A web app for creating and publishing surveys and analysing client data.',
       technologies: `Angular 7, Java/JEE, Hibernate, JPA, MySql`,
-      screenshots: ['/crm/1.jpg', '/crm/2.jpg', '/crm/3.jpg'],
+      screenshots: ['/crm/1', '/crm/2', '/crm/3'],
     },
     {
       id: 4,
@@ -80,13 +72,7 @@ export class AboutComponent implements OnInit {
       description:
         'A management system that automates documents distribution inside the OMMP ',
       technologies: `Spring MVC, Hibernate, JPA, Bootstrap, JavaScript/JQuery Oracle DB`,
-      screenshots: [
-        '/ommp/1.jpg',
-        '/ommp/2.jpg',
-        '/ommp/3.jpg',
-        '/ommp/4.jpg',
-        '/ommp/5.jpg',
-      ],
+      screenshots: ['/ommp/1', '/ommp/2', '/ommp/3'],
     },
   ];
   constructor() {}
