@@ -9,13 +9,13 @@ import { ServicesComponent } from './components/services/services.component';
 import { ServiceBoxComponent } from './components/services/service-box/service-box.component';
 import { MainComponent } from './components/main/main.component';
 import { ShootingStarComponent } from './components/main/shooting-star/shooting-star.component';
-import { FooterComponent } from './components/footer/footer.component';
+//import { FooterComponent } from './components/footer/footer.component';
 import { AboutComponent } from './components/about/about.component';
 import { ProjectComponent } from './components/about/project/project.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { SocialsComponent } from './components/socials/socials.component';
-import { AnnounecementComponent } from './components/announecement/announecement.component';
-import { LoaderComponent } from './components/loader/loader.component';
+//import { AnnounecementComponent } from './components/announecement/announecement.component';
+//import { LoaderComponent } from './components/loader/loader.component';
 import { ErrorComponent } from './components/error/error.component';
 
 @NgModule({
@@ -26,13 +26,13 @@ import { ErrorComponent } from './components/error/error.component';
     ServiceBoxComponent,
     MainComponent,
     ShootingStarComponent,
-    FooterComponent,
+    //FooterComponent,
     AboutComponent,
     ProjectComponent,
     ContactComponent,
     SocialsComponent,
-    AnnounecementComponent,
-    LoaderComponent,
+    //AnnounecementComponent,
+    //LoaderComponent,
     ErrorComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, ReactiveFormsModule],

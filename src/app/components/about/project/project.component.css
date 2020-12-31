@@ -60,6 +60,8 @@
   border-radius: 4px;
   padding: 5px;
   height: 7.8125vw;
+  min-height: 7.8125vw;
+  min-width: 5vw;
   margin-right: 5px;
 }
 

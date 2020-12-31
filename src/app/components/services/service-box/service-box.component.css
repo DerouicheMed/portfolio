@@ -28,12 +28,15 @@
 }
 #service-1 {
   background-image: url("/assets/img/service_box_bg_1.jpg");
+  background-color: #021b41;
 }
 #service-2 {
   background-image: url("/assets/img/service_box_bg_2.jpg");
+  background-color: #3b164e;
 }
 #service-3 {
   background-image: url("/assets/img/service_box_bg_3.jpg");
+  background-color: #26373f;
 }
 hr {
   background-image: linear-gradient(#fe0072, #ff0046);
@@ -106,7 +109,6 @@ p {
   .btn-contact-small {
     width: 50px;
     height: 50px;
-
     border-radius: 50%;
     border: transparent;
     color: white;

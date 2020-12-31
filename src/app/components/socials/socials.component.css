@@ -1,5 +1,9 @@
 #socials {
   overflow-x: hidden;
+  background-image: url("/assets/img/socials_bg-preview.jpg");
+  background-color: #5c1a58;
+}
+.section-inner {
   background-image: url("/assets/img/socials_bg.jpg");
 }
 .main-row {
@@ -21,18 +25,23 @@ h2 {
 }
 .facebook-box {
   background-image: url("/assets/img/facebook.jpg");
+  background-color: #1c165c;
 }
 .instagram-box {
   background-image: url("/assets/img/instagram.jpg");
+  background-color: #fcfcfe;
 }
 .linkedin-box {
   background-image: url("/assets/img/linkedIn.jpg");
+  background-color: #0077a9;
 }
 .github-box {
   background-image: url("/assets/img/github.jpg");
+  background-color: #fff;
 }
 .fiverr-box {
   background-image: url("/assets/img/fiverr.jpg");
+  background-color: #00b22a;
 }
 .btn {
   position: relative;

@@ -1,4 +1,8 @@
 section {
+  background-image: url("/assets/img/background-preview.jpg");
+  background-color: #030919;
+}
+.section-inner {
   background-image: url("/assets/img/background.jpg");
 }
 .display-message {

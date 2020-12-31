@@ -1,5 +1,10 @@
 #services {
-  background-image: url("/assets/img/main_background.jpg");
+  background-image: url("/assets/img/services_bg-preview.jpg");
+  background-color: #fa0178;
+  overflow-x: hidden;
+}
+.section-inner {
+  background-image: url("/assets/img/services_bg.jpg");
   overflow-x: hidden;
 }
 h1 {

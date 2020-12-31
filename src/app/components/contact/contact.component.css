@@ -1,5 +1,9 @@
 #contact {
   overflow-x: hidden;
+  background-image: url("/assets/img/contact_bg-preview.jpg");
+  background-color: #1f1e3e;
+}
+.section-inner {
   background-image: url("/assets/img/contact_bg.jpg");
 }
 .contact-box {
