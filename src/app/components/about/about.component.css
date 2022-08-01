@@ -30,6 +30,10 @@
   margin: 40px auto;
   text-align: justify;
 }
+.profile-paragraph a {
+  color: #ff4e01;
+  font-weight: 700;
+}
 .btn {
   margin: 0px 2px;
 }
